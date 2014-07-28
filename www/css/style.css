@@ -1,0 +1,27 @@
+/* Remove these and add your own CSS if you like */
+body {
+	margin: 0;
+	padding: 0;
+}
+/* To add some room between the edge of the device and the buttons. */
+#buttonCntr {
+	padding-left: 2em;
+	padding-right: 2em; 
+}
+/* To align the image in the middle, and set its maximum size */
+#lastPhoto {
+	display: block;
+	max-height: 400px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+/* Placing cloudResponse in the middle */
+#greeting {
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 10px 10px 0 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
