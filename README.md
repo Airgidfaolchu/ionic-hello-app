@@ -14,7 +14,7 @@ FeedHenry Studio.
 + **sudo npm install**                                 
     + //install dependecies
 + **ionic platform add [PLATFORM]**                         
-    + //add platform (tested on Android and iOS)
+    + //add platform (Android and iOS is already included)
 + **ionic emulate [PLATFORM] or ionic run [PLATFORM]**    
     + //emulate on desktop/laptop, or run it on device
 
