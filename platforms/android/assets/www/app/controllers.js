@@ -30,7 +30,7 @@ myApp.controller('MainCtrl', function($scope, fhcloud) {
         if (reqJson.payload.userInput) {
             // if defined, pass uName and callback 
             // fn to fhcloud service
-            fhcloud.cloud('exampleAction', reqJson, success, error);
+            fhcloud.cloud('helloAction', reqJson, success, error);
             console.log(uName, " is sent to cloud");
         } else {
             console.log("uName:", " is not defined");
@@ -57,6 +57,8 @@ myApp.controller('MainCtrl', function($scope, fhcloud) {
 myApp.controller('CamCtrl', function($scope, Camera) {
     console.log('CamCtrl', $scope);
 
+    var app = document.URL.indexOf( 'http://' ) === -1 && document.URL.indexOf( 'https://' ) === -1;
+if ( app ) {
     $scope.getPhoto = function() {
         Camera.getPicture().then(function(imageURI) {
             console.log(imageURI);
@@ -70,5 +72,10 @@ myApp.controller('CamCtrl', function($scope, Camera) {
             saveToPhotoAlbum: false
         });
     };
+} else {
+    console.log('HTML5 code here');
+}
+
+    
 
 });

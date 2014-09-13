@@ -15,6 +15,19 @@ body {
 	max-width: 90%;
 	margin: 0 auto;
 }
+#canvas, #video {
+	display: none;
+	max-height: 400px;
+	max-width: 320px;
+	margin: 0 auto;
+	position: relative;
+}
+#takeBtn {
+	display: none;
+	position: relative;
+	max-width: 320px;
+	margin: 0 auto;
+}
 /* Placing cloudResponse in the middle */
 #greeting {
     top: 0;

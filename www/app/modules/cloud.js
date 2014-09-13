@@ -15,7 +15,7 @@ angular.module('fhcloud', ['ngResource']).service("fhcloud", function() {
     this.cloud = function(endpoint, params, successCb, errCb) {
         console.log(params);
         $fh.cloud({
-                path: 'hello',
+                path: endpoint,
                 data: params
             },
             successCb,
