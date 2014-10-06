@@ -13,10 +13,13 @@
             <h1 id="greeting">{{greeting}}</h1>
         </div>
         <div id="buttonCntr" ng-controller="CamCtrl">
-            <button ng-click="getPhoto()" class="button button-block button-stable icon ion-camera">Take Photo</button>
+            <button ng-click="getPhoto();fakePhoto()" class="button button-block button-stable icon ion-camera">Take Photo</button>
             <div>
                 <img ng-src="{{lastPhoto}}" id="lastPhoto">
             </div>
+            <video id="video"></video>
+            <button id="takeBtn" class="button button-block button-stable">Take it!</button>
+            <canvas id="canvas"></canvas>
             </br>
         </div>
     </ion-content>
